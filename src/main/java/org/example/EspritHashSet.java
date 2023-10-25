@@ -35,7 +35,7 @@ public class EspritHashSet implements GestionEnseignant{
         System.out.println(this.hashSetEnseignant);
     }
     public TreeSet<Enseignant> TriParNom (){
-        TreeSet<Enseignant> treeSet = new TreeSet<>(new TriParIdDec());
+        TreeSet<Enseignant> treeSet = new TreeSet<>(new TriParNom());
         treeSet.addAll(this.hashSetEnseignant);
         return treeSet;
     }
