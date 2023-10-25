@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.TreeSet;
 
@@ -12,6 +13,8 @@ public class EspritTreeSet implements GestionEnseignant {
     public EspritTreeSet (TriParIdDec tr){
         treeSetSetEnseignant = new TreeSet<>(tr);
     }
+
+
     @Override
     public void ajouterEnseignant(Enseignant e) {
         this.treeSetSetEnseignant.add(e);
@@ -39,4 +42,6 @@ public class EspritTreeSet implements GestionEnseignant {
     public void displayEnseignants() {
         System.out.println(this.treeSetSetEnseignant);
     }
+
+
 }

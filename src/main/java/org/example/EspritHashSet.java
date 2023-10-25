@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.HashSet;
+import java.util.TreeSet;
 
 public class EspritHashSet implements GestionEnseignant{
 
@@ -33,4 +34,15 @@ public class EspritHashSet implements GestionEnseignant{
     public void displayEnseignants() {
         System.out.println(this.hashSetEnseignant);
     }
+    public TreeSet<Enseignant> TriParNom (){
+        TreeSet<Enseignant> treeSet = new TreeSet<>(new TriParIdDec());
+        treeSet.addAll(this.hashSetEnseignant);
+        return treeSet;
+    }
+    public TreeSet<Enseignant> TriParIdDec (){
+        TreeSet<Enseignant> treeSet = new TreeSet<>(new TriParIdDec());
+        treeSet.addAll(this.hashSetEnseignant);
+        return treeSet;
+    }
 }
+
