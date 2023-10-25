@@ -18,7 +18,7 @@ public class Main {
         hastSetEsprit.displayEnseignants();
 
         System.out.println("-------------");
-        EspritTreeSet treeSetEsprit = new EspritTreeSet();
+        EspritTreeSet treeSetEsprit = new EspritTreeSet(new TriParNom());
         treeSetEsprit.ajouterEnseignant(e1);
         treeSetEsprit.ajouterEnseignant(e2);
         treeSetEsprit.displayEnseignants();

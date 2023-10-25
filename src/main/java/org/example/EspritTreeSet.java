@@ -5,7 +5,7 @@ import java.util.TreeSet;
 
 public class EspritTreeSet implements GestionEnseignant {
 
-    private TreeSet<Enseignant> treeSetSetEnseignant = new TreeSet<>() ;
+    private TreeSet<Enseignant> treeSetSetEnseignant = new TreeSet<>(new TriParNom()) ;
 
     @Override
     public void ajouterEnseignant(Enseignant e) {
