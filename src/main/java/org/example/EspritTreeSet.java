@@ -5,8 +5,13 @@ import java.util.TreeSet;
 
 public class EspritTreeSet implements GestionEnseignant {
 
-    private TreeSet<Enseignant> treeSetSetEnseignant = new TreeSet<>(new TriParNom()) ;
-
+    private TreeSet<Enseignant>treeSetSetEnseignant ;
+    public EspritTreeSet (TriParNom tr){
+        treeSetSetEnseignant = new TreeSet<>(tr);
+    }
+    public EspritTreeSet (TriParIdDec tr){
+        treeSetSetEnseignant = new TreeSet<>(tr);
+    }
     @Override
     public void ajouterEnseignant(Enseignant e) {
         this.treeSetSetEnseignant.add(e);
